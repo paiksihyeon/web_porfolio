@@ -1,0 +1,87 @@
+/* =============================
+   Awards Timeline (Clean Blue Version)
+   ============================= */
+
+#awards-section {
+  background: #f9fafc;
+  padding: 80px 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* --- 타임라인 전체 --- */
+.timeline {
+  position: relative;
+  border-left: 3px solid #dee2e6;
+  margin-left: 40px;
+  padding-left: 25px;
+  color: #222;
+}
+
+/* --- 각 연도 그룹 --- */
+.timeline-item {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+/* --- 점 포인트 --- */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: 8px;
+  width: 15px;
+  height: 15px;
+  background: #3e64ff; /* 단색 블루 점 */
+  border-radius: 50%;
+}
+
+/* --- 연도 텍스트 --- */
+.timeline-date {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #3e64ff;
+  margin-bottom: 16px;
+  display: block;
+  letter-spacing: 0.5px;
+}
+
+/* --- 리스트 --- */
+.timeline ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.timeline li {
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 8px;
+  padding-left: 8px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* --- hover 시 효과 --- */
+.timeline li:hover {
+  background-color: rgba(0, 123, 255, 0.05);
+  border-left: 3px solid #3e64ff;
+  padding-left: 12px;
+  border-radius: 4px;
+}
+
+/* --- 강조 텍스트 --- */
+.timeline li b {
+  color: #000;
+}
+
+/* --- 반응형 --- */
+@media (max-width: 768px) {
+  .timeline {
+    margin-left: 25px;
+    padding-left: 15px;
+  }
+  .timeline-date {
+    font-size: 1.3rem;
+  }
+}
