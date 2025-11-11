@@ -350,11 +350,6 @@ window.onload = function() {
 })(jQuery);
 
 
-
-
-
-
-
 // this makes the height of each page equal to the height of the window
 // $('.page').css('height', $( window ).height());
 
